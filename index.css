@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* color: #808080;
+     */
+     color: #fff;
+}
+html{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+body{
+    padding: 20px;
+}
+
+nav{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    
+}
+nav > p{
+    color: white;
+}
+.container{
+    display: flex;
+    margin-top: 30px;
+       gap: 20px;
+}
+.card{
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    
+}
+.item{
+    border: 1px solid gray;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-flow:column wrap;
+    border-radius: 10px;
+}
+li{
+    margin-top: 10px;
+}
+.card-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 25% ;
+}
+.profile-img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.profile{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-card > div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bottom-card img{
+    width: 30px;
+    height: 30px;
+}
+table{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 100%;
+    flex-grow: 1;
+    margin-top: 20px;
+    border-spacing: 0;
+    
+
+}
+table > p{
+    color: #808080;
+}
+thead{
+    border:  1px solid gray;
+}
+td{
+    /* border: 1px solid gray; */
+    padding: 10px;
+    border-right: 1px solid gray;
+
+}
+thead td{
+    border-bottom: 1px solid gray;
+  
+}
+thead td:nth-child(3){
+    border-right: none;
+}
+input{
+    display: none;
+    
+}
+label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* background-color: gray; */
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+input:checked + label{
+    background-color: gray;
+}
+
+
+@media (max-width:700px) {
+    .container{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .card-container{
+        width: 100%;
+    }
+   
+    
+}
